@@ -1,6 +1,6 @@
 # 02 프로그래밍 핵심 개념 in JavaScript   
 
-## 01 추상화(Abstraction)
+## 02 추상화(Abstraction)
 
 ### 01. 할당 연산자
 등호(=): 우변을 좌변에 할당해라.   
