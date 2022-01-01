@@ -89,7 +89,7 @@ for (초기화부분; 조건부분; 추가동작부분) {
 ```
 e.g.
 ```JavaScript
-for ( ㅣㄷㅅi = 1; i <= 10; i++;) {
+for (let i = 1; i <= 10; i++;) {
   console.log("코드잇 최고!")
 }
 ```
