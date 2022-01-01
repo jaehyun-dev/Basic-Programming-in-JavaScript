@@ -96,8 +96,76 @@ introduce('코드잇', 4); // 파라미터 값을 생략한 경우
 main10.js 참고
 
 ### 11. 변수의 scope
+변수가 유효한 범위.   
+함수를 선언한 뒤 함수 밖에서 변수를 불러오면 오류 뜸.   
+함수 선언할 때 중괄호 {}안의 내용: 블록문(Block Statement)   
+블록문 안에 선언된 변수: 로컬 변수, 지역 변수(Local Variable)   
+로컬 변수는 블록문 안에서만 유효함.   
+블록문 밖에서 선언된 변수: 글로벌 변수, 전역 변수(Global Variable)
+코드 전체에서 어디서든 사용할 수 있음.   
+블록문에서 변수 사용하게 되면 가장 먼저 로컬 변수가 있는지 확인함.   
+로컬 변수가 있으면 사용, 없으면 글로벌 변수 사용.   
+글로별 변수도 없다면 오류가 생김.
 
 ### 12. scope 익히기
+질문 1   
+다음 코드를 실행했을 때 출력되는 내용을 선택하세요.   
+```JavaScript
+function myFunction() {
+  let x = '코드잇';
+  x = "을지로";
+}
+
+myFunction();
+console.log(x);
+```
+
+정답:   
+오류가 발생한다.   
+
+
+질문 2   
+다음 코드를 실행했을 때 출력되는 내용을 선택하세요.
+```JavaScript
+let x = 120;
+
+function myFunction() {
+  let x = 20;
+  console.log(x);
+}
+
+myFunction();
+console.log(x);
+```
+
+정답:   
+```
+20
+120
+```
+
+
+질문 3   
+다음 코드를 실행했을 때 출력되는 내용을 선택하세요.
+```JavaScript
+let x = 100;
+
+function myFunction() {
+  let y = 40;
+  console.log(x + y);
+}
+   
+myFunction();
+console.log(x);
+```
+
+정답:   
+```
+140
+100
+```
+
+
 
 ### 13. 상수
 
