@@ -3,6 +3,9 @@ Area1: 12, Area2: 40, Area3: 14
 */
 
 // 여기에 calculateRectangleArea 함수를 작성해 주세요.
+function calculateRectangleArea(width, length) {
+  return width * length;
+};
 
 
 // 테스트 코드
