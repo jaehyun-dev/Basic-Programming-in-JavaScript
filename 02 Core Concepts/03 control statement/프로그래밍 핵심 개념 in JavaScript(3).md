@@ -58,10 +58,10 @@ switch (비교할 값) {
   case 조건값_1:
     동작부분;
     break;
-  case 조건값_2;
+  case 조건값_2:
     동작부분;
     break;
-  default;
+  default:
     동작부분;
 }
 ```
