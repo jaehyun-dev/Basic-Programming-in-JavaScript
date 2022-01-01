@@ -6,5 +6,17 @@
 
 나머지   
 ```JavaScript
-console.log(7 % 3)
+console.log(7 % 3);
+```
+```
+1
+```
+
+
+거듭제곱   
+```JavaScript
+console.log(2 ** 3);
+```
+```
+8
 ```
