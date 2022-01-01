@@ -76,7 +76,7 @@ function introduce(name, age, nationality = '한국') {
   console.log(`국적은 ${nationality}입니다.`);
 };
 
-introduce('코드잇', 4, '미국); // 값을 모두 전달한 경우
+introduce('코드잇', 4, '미국'); // 값을 모두 전달한 경우
 console.log('');
 introduce('코드잇', 4); // 파라미터 값을 생략한 경우
 ```
