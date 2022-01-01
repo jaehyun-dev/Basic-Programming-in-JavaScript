@@ -31,7 +31,7 @@ console.log(2 ** 3);
 ## 04. 문자열 활용
 문장 안에 큰따옴표(")나 작은따옴표(') 들어가는 경우   
 1. "I'm Ironman."
-2. "He said /"I'm Ironman./""
+2. "He said \"I'm Ironman.\""
 3. (백틱)He said I'm Ironman.(백틱)   
 의 방법으로 입력해서 쓸 수 있음.   
 (백틱은 숫자 1 왼쪽의 키)
