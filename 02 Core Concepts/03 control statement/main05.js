@@ -42,8 +42,18 @@ let callYoungerBrother = '남동생';
 
 // 상대방의 나이와 성별에 따른 호칭을 리턴하는 함수 whatShouldICall를 완성하세요.
 function whatShouldICallYou(yourAge, yourGender) {
-  // 여기에 코드를 작성해 주세요.
-}
+  if (yourAge === myAge) {
+    return callFriend;
+  } else if (yourAge < myAge) {
+    if (yourGender === myGender) {
+      return callYoungerBrother;
+    } else return callYoungerSister;
+  } else {
+    if (yourGender === myGender) {
+      return callOlderBrother;
+    } else return callOlderSister;
+  };
+};
 
 // 테스트 코드
 let result1 = whatShouldICallYou(25, 'female');
