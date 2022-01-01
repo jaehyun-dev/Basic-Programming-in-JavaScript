@@ -6,8 +6,8 @@ let material4 = '4';
 let material5 = 4;
 
 // 연산 결과
-let result1;
-let result2;
+let result1 = material2 + material4;
+let result2 = material1 * material3 + material5;
 
 // 연산을 통해 result1에 문자열 '34'를, result2에 숫자형 34를 만들어 넣어주세요.
 // 코드를 작성해주세요.
