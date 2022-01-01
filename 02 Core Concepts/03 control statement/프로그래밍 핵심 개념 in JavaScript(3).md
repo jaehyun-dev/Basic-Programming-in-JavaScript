@@ -47,12 +47,24 @@ if (조건부) {
 ### 04. 학점 계산기
 main04.js 참고
 
-
 ### 05. 서열 정리
+main05.js 참고
 
-
-### 06. switch문
-
+### 06. switch문(switch statement)
+어떤 값을 선택하냐에 따라 다른 동작부.   
+문법:   
+```JavaScript
+switch (비교할 값) {
+  case 조건값_1:
+    동작부분;
+    break;
+  case 조건값_2;
+    동작부분;
+    break;
+  default;
+    동작부분;
+}
+```
 
 ### 07. switch문 vs if문
 
