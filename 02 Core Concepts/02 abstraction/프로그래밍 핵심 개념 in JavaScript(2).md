@@ -59,7 +59,7 @@ return은 output을 반환하는 역할 외에도 함수의 실행을 중단하�
 작성하지 않는 게 좋음.
 
 ### 07. return문과 console.log의 차이
-return문은 어떤 값을 반환해주고 console.log는 어떤 값을 출력해주는 역할.
+return문은 어떤 값을 반환해주고 console.log는 어떤 값을 출력해주는 역할.   
 console.log() 안에 return문과 console.log()을 사용한 함수를 각각 넣으면 다른 결과.
 
 ### 08. 함수 부려먹기 III
