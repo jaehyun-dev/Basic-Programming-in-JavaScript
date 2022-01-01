@@ -31,3 +31,29 @@ function checkHeight(height) {
 checkHeight(140);
 checkHeight(135);
 checkHeight(170);
+
+/*
+여기까지만 해도 충분히 잘 작성하셨습니다.
+그런데 여기서  조금만 더 팁을 드리자면, 키 제한 값이나 출력메시지 값과 같이 직접적으로 작성되는 값은 변수로 추상화 하는 것이 가독성과 유지보수 측면에서 좀 더 좋은데요.
+*/
+
+// 파라미터 height을 활용하는 checkHeight 함수를 완성하세요.
+function checkHeight(height) {
+  const LIMIT = 140;
+  let passMessage = '탑승이 가능합니다.';
+  let failMessage = '탑승이 불가능합니다.';
+
+  if (height >= LIMIT) {
+    console.log(passMessage);
+  } else {
+    console.log(failMessage);
+  }
+}
+
+/*
+위 코드를 보면 비록 코드는 길어졌지만,
+각 값들의 의미를 부여하기 때문에 다른 사람들에게 보여주거나 혹은 내가 이 코드를 다시 보게 될 때도 좀 더 이해하기 편한 코드가 될 수 있습니다.
+
+그리고 혹여나 제한 키의 값을 수정하거나 출력 메시지를 수정할 때도,
+이렇게 한곳에 모여있는 변수 값들을 변경할 수 있으면 if문 안에서 하나하나 찾아서 수정하는 것보다는 상대적으로 더 편리하게 수정을 할 수 있겠죠? :)
+*/
