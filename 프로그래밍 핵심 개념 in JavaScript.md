@@ -128,6 +128,7 @@ let day = 1;
 
 console.log('오늘은 ' + year + '년 ' + month + '월 ' + day + '일 입니다.');
 console.log(`오늘은 ${year}년 ${month}월 ${day}일 입니다.`);
+//주의: 작은따옴표가 아닌 백틱 사용!
 ```
 ```
 오늘은 2022년 1월 1일 입니다.
