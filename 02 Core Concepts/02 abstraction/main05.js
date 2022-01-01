@@ -9,6 +9,9 @@
 */
 
 // 여기에 expressMultiplication 함수를 작성해 주세요.
+function expressMultiplication(num1, num2) {
+  console.log(`${num1} * ${num2} = ${num1 * num2}`);
+};
 
 // 테스트 코드
 expressMultiplication(3, 4);
