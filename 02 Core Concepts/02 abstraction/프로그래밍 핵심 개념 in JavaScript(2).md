@@ -172,11 +172,47 @@ console.log(x);
 상수를 선언할 떄는 let 대신 constant의 약자인 const 사용
 ```JavaScript
 const PI = 3.14; //원주율
-pi = 3;
+PI = 3;
 ```
 상수로 선언한 값은 밑에서 어떤 값을 할당하려 하면 오류가 뜨기 때문에 보호할 수 있음.   
+```JavaScript
+const MY_NUMBER = 2;
+```
 상수의 이름은 전부 대문자로, 두 단어 이상일 때는 밑줄(_)로 구분하는 암묵적인 규칙이 있음.
 
 ### 14. 상수 익히기
+질문 1   
+다음 코드를 실행했을 때 출력되는 내용을 선택하세요.
+```JavaScript
+const X = 1500;
+
+function myFunction() {
+  X = 1500 * 1.5;
+  console.log(X);
+}
+
+myFunction();
+console.log(X);
+```
+
+정답:   
+오류가 발생한다.   
+
+질문 2   
+다음 코드를 실행했을 때 출력되는 내용을 선택하세요.   
+```JavaScript
+const X = 1500;
+let x = 1000;
+
+console.log(x);
+console.log(X);
+```
+
+정답:   
+```JavaScript
+1000
+1500
+```
 
 ### 15. 함수 변수 복습하기
+main15.js 참고
