@@ -11,8 +11,8 @@
 
 // 여기에 logParticipant 함수를 작성해 주세요.
 function logParticipant(name) {
-  console(`${name}(이)가 대화에 참여했습니다.`)
-}
+  console.log(`${name}(이)가 대화에 참여했습니다.`);
+};
 
 // 테스트 코드
 logParticipant('동수');
