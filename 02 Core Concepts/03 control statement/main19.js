@@ -31,6 +31,7 @@ for문과 while문 중 어떤 반복문을 사용해도 상관없습니다.
 */
 
 // 여기에 코드를 작성해 주세요.
+/*
 let a = 1;
 let b = 1;
 
@@ -44,4 +45,16 @@ for (i = 1; i <= 16; i++) {
   console.log(a);
   b = temp + a;
   console.log(b);
+}
+*/
+
+//모범 답안
+let current = 1;
+let previous = 0;
+
+for (let i = 1; i <= 50; i++) {
+  console.log(current);
+  let temp = previous;
+  previous = current;
+  current = current + temp;
 }
