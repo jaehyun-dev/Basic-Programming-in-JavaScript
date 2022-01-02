@@ -31,3 +31,17 @@ for문과 while문 중 어떤 반복문을 사용해도 상관없습니다.
 */
 
 // 여기에 코드를 작성해 주세요.
+let a = 1;
+let b = 1;
+
+console.log(a);
+console.log(b);
+
+for (i = 1; i <= 16; i++) {
+  let temp = a + b;
+  console.log(temp);
+  a = b + temp;
+  console.log(a);
+  b = temp + a;
+  console.log(b);
+}
