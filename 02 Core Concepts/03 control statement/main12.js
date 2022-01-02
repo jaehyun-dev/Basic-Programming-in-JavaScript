@@ -27,6 +27,16 @@ function printTriangle(height) {
   }
 }
 
+/*
+.repeat()을 사용하는 방법
+
+function printTriangle(height) {
+  for (let i = 1; i <=height; i++) {
+    console.log('*'.repeat(i))
+  }
+}
+*/
+
 // 테스트 코드
 console.log('높이: 1');
 printTriangle(1);
