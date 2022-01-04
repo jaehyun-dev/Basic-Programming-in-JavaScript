@@ -67,7 +67,7 @@ delete objectname.propertyName;
 
 in 연산자 활용해서 property 존재여부 확인할 수 있음.   
 ```JavaScript
-'propertyName in object
+'propertyName' in object
 ```
 
 undefined와 불일치 비교할 수 있지만 실수로 value에 undefined 할당했을 경우 고려하면 보다 안전함.
