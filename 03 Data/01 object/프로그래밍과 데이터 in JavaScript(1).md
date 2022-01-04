@@ -82,6 +82,20 @@ main06.js 참고
 ```JavaScript
 object.method(parameter)
 ```
+e.g.
+```JavaScript
+let greetings = {
+  sayHello: function (name) {
+    console.log(`Hello ${name}!`);
+  },
+  sayHi : function () {
+    console.log('Hi!');
+  },
+  sayBye: function () {
+    console.log('Bye!');
+  }
+};
+```
 
 ### 08. 영어 단어장 III
 main08.js 참고
