@@ -106,7 +106,34 @@ Hello Codeit!
 main08.js 참고
 
 ### 09. for...in 반복문
+객체 안에 있는 property를 가지고 반복적인 동작을 수행할 때 사용.   
+문법:
+```JavaScript
+for (변수 in 객체) {
+  동작부분
+}
+```
+e.g.
+```JavaScript
+let codeit = {
+  name: '코드잇',
+  bornYear: 2017,
+  isVeryNice: true,
+  worstCourse: null,
+  bestCourse: '자바스크립트 프로그래밍 기초'
+}
 
+for (let key in codeit) {
+  console.log(key);
+}
+```
+```JavaScript
+name
+bornYear
+isVeryNice
+worstCourse
+bestCourse
+```
 
 ### 10. for...in 주의사항
 
