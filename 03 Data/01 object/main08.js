@@ -30,6 +30,7 @@
 "property"의 뜻은 "속성"입니다.
 */
 
+/*
 let myVoca = {
   // 코드를 작성해 주세요.
   addVoca: function (vocab, meaning) {
@@ -41,6 +42,21 @@ let myVoca = {
   printVoca: function (vocab) {
     console.log(`"${vocab}"의 뜻은 "${myVoca[`${vocab}`]}"입니다.`)
   }
+};
+*/
+
+//모범답안
+let myVoca = {
+  // 코드를 작성해 주세요.
+  addVoca: function (key, value) {
+    myVoca[key] = value;
+  },
+  deleteVoca: function (key) {
+    delete myVoca[key];
+  },
+  printVoca: function (key) {
+    console.log(`"${key}"의 뜻은 "${myVoca[key]}"입니다.`);
+  },
 };
 
 // addVoca메소드 테스트 코드
