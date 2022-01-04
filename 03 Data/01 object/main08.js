@@ -32,7 +32,15 @@
 
 let myVoca = {
   // 코드를 작성해 주세요.
-
+  addVoca: function (vocab, meaning) {
+    myVoca[`${vocab}`] = `${meaning}`;
+  },
+  deleteVoca: function (vocab) {
+    delete myVoca[`${vocab}`];
+  },
+  printVoca: function (vocab) {
+    console.log(`"${vocab}"의 뜻은 "${myVoca[`${vocab}`]}"입니다.`)
+  }
 };
 
 // addVoca메소드 테스트 코드
