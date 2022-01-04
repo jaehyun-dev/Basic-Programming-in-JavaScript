@@ -95,6 +95,11 @@ let greetings = {
     console.log('Bye!');
   }
 };
+
+greetings.sayHello('Codeit!');
+```
+```JavaScript
+Hello Codeit!
 ```
 
 ### 08. 영어 단어장 III
