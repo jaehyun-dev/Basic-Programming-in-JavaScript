@@ -48,10 +48,32 @@ value가 object인 경우 objectName.propertyName.propertyName으로 접근 가�
 main04.js 참고
 
 ### 05. 객체 다루기
+객체의 프로퍼티를 수정하는 방법:   
+해당 프로퍼티에 접근해서 새로운 값을 할당해주면 됨.   
+```JavaScript
+objectName.propertyName = 'newValue';
+```
 
+객체의 프로퍼티를 추가하는 방법:   
+새로운 key와 value를 추가하면 됨.   
+```JavaScript
+objectName.newPropertyName = 'newValue";
+```
+
+객체의 프로퍼티를 삭제하는 방법: delete 연산자   
+```JavaScript
+delete objectname.propertyName;
+```
+
+in 연산자 활용해서 property 존재여부 확인할 수 있음.   
+```JavaScript
+'propertyName in object
+```
+
+undefined와 불일치 비교할 수 있지만 실수로 value에 undefined 할당했을 경우 고려하면 보다 안전함.
 
 ### 06. 영어 단어장 II
-
+main06.js 참고
 
 ### 07. 객체와 메소드
 
