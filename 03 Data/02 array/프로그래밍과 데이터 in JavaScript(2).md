@@ -14,10 +14,25 @@ indexing
 main02.js 참고
 
 ### 03. 배열 다루기
+배열도 객체의 한 종류.   
+length property: 배열이 가지고 있는 요소의 총 갯수.
+```JavaScript
+array.length
+arry['length']
+```
 
+배열에 요소를 추가하기, 수정하기 = 객체와 비슷함   
+```JavaScript
+array(newIndex) = 'newElement' //추가하기
+array(index) = 'newElement' //수정하기
+```
+주의: 순서를 뛰어넘는 인덱스를 추가하면 중간에 빈값이 추가됨!
+
+주의: delete로 array의 index 지우면 empty 값이 element로 남아있음
+따라서 배열이 갖는 메소드를 사용해야 함.
 
 ### 04. 온도 바꾸기
-
+main04.js 참고
 
 ### 05. 배열 메소드 I
 
