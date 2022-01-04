@@ -141,9 +141,48 @@ bestCourse
 ### 11. 순이들의 시험 결과
 main11.js 참고
 
-### 12. Datee객체
+### 12. Date객체
+내장 객체(Standard built-in objects)   
+자바스크립트가 미리 가지고 있는 객체.   
+e.g. console 객체   
+내장 객체 중 대표적인 게 Date 객체.
+```JavaScript
+let myDate = new Date();
+console.log(myDate);
+//객체를 생성한 순간의 시간이 출력됨.
+```
+```
+Tue Jan 04 2022 18:08:17 GMT+0900 (대한민국 표준시)
+```
+```JavaScript
+let myDate = new Date(1000);
+ // 1970년 1월 1일 00:00:00 UTC + 1000밀리초 지난 객체가 만들어짐.
+ 
+let myDate = new Date('2017-05-18T19:11:16');
+// 해당 시간에 맞는 시간 객체가 만들어짐. 만약 T 앞의 부분까지만 입력하면 자정 기준으로 만들어짐.
 
+let myDate = new Date(YYYY, MM, DD, hh, mm, ss, ms);
+// YYYY, MM까지는 필수, 나머지는 생략 가능. 생략 시 01, 00, 00, 00, 00으로 처리됨.
+```
+주의 사항: month는 0부터 시작함, 요일은 일요일부터 0으로 시작함!
 
+```JavaScript
+let myDate = new Date(2017, 4, 18, 19, 11, 16);
+
+console.log(myDate.getTime());
+//myDate 객체가 1970년 1월 1일 00:00:00 UTC 부터 몇 밀리초 지났는지 표시됨(타임스탬프, time stamp)
+```
+```JavaScript
+myDate.getFullYear()
+myDate.getMonth()
+myDate.getDate()
+myDate.getDay()
+myDate.getHours()
+myDate.getMinutes()
+myDate.getSeconds()
+myDate.getMilliseconds()
+```
+ 
 ### 13. Date객체 Tip
 
 
