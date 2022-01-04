@@ -41,7 +41,7 @@ my-name: '코드잇'
 
 대괄호 표기법의 경우 띄어쓰기가 포함된 이름의 property name도 접근 가능함.   
 
-value가 object인 경우 objectName.propertyName.propertyName으로 접근 가능함.
+value가 object인 경우 objectName.propertyName.propertyName으로 접근 가능함.   
 존재하지 않는 property에 접근하려고 하면 undefined가 출력됨.
 
 ### 04. 영어 단어장 I
