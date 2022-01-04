@@ -44,7 +44,6 @@ deleteCount 생략 시 StartIndex부터 이후 모든 element 삭제.
 item 통해 새 element 입력할 수 있음.   
 element 지운 자리에 추가하기 때문에 index 밀릴 수 있음.   
 잘 활용하면 여러 개 동시에 수정 가능함.
-```
 
 ### 06. splice 연습하기
 main06.js 참고
