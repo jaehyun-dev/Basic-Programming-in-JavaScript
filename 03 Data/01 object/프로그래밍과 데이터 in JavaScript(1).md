@@ -76,10 +76,15 @@ undefined와 불일치 비교할 수 있지만 실수로 value에 undefined 할�
 main06.js 참고
 
 ### 07. 객체와 메소드
-
+연관성 있는 여러 함수들을 하나로 묶고 싶을 때,   
+프로퍼티로 함수를 넣어주면 됨.   
+호출하는 방법:
+```JavaScript
+object.method(parameter)
+```
 
 ### 08. 영어 단어장 III
-
+main08.js 참고
 
 ### 09. for...in 반복문
 
