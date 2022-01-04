@@ -50,8 +50,18 @@ let minsoonScore = {
 
 function passChecker(scoreObject) {
 	// 여기에 코드를 작성해 주세요.
-
+  let totalScore = 0;
+  for (score in scoreObject) {
+    totalScore = totalScore + scoreObject[score];
+  };
+  if (totalScore >= 60) {
+    console.log('축하합니다! 합격입니다!');
+  } else {
+    console.log('아쉽지만 불합격입니다..');
+  };
 }
+
+//모범답안의 경우 for (subject in scoreObject) 로 씀.
 
 passChecker(hyesoonScore);
 passChecker(minsoonScore);
