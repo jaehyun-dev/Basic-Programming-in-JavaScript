@@ -25,7 +25,10 @@ interest = v * n * (n+1) / 2 * r / 12
 */
 
 // 여기에 코드를 작성해 주세요.
-
+function interestCalculator(rate, payment, term) {
+  let interest = payment * term * (term + 1) / 2 * rate / 12;
+  console.log(+interest.toFixed(1));
+};
 
 
 // 이율이 4.3%일 때 매월 80만원씩 24개월 납입할 경우
