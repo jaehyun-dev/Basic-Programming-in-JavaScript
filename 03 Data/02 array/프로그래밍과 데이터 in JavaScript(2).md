@@ -167,7 +167,7 @@ for (변수 of 배열) {
   동작부분;
 }
 ```
-주의: 배열에서는 for...in문 안 쓰는 것을 권장! 유사배열 등 length property 할당됐을 떄 작동 X
+주의: 배열에서는 for...in문 안 쓰는 것을 권장! 유사배열 등 length property 할당됐을  작동 X
 
 ### 11. 투표 집계하기
 main11.js 참고
