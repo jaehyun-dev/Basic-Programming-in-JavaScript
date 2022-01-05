@@ -329,7 +329,59 @@ console.log(y);
 x와 y가 같은 객체 주소를 갖게 되고, 하나를 수정하면 다른 하나도 마찬가지로 바뀐 것처럼 보임.
 
 ### 11. 기본형과 참조형 익히기
+질문 1   
+다음 코드를 실행했을 때 출력되는 내용을 고르세요.
+```JavaScript
+let x = 'Codeit';
+let y = x;
 
+y = x + '!';
+x = y.toLowerCase();
+
+console.log(y);
+```
+정답:
+```JavaScript
+Codeit!
+```
+
+질문 2   
+다음 코드를 실행했을 때 출력되는 내용을 고르세요.   
+```JavaScript
+let x = ['Kim', 'Na', 'Park', 'Lee'];
+let y = x;
+
+y.push('Lim');
+x[4] = 'Sung';
+
+console.log(y);
+```
+정답:
+```JavaScript
+['Kim', 'Na', 'Park', 'Lee', 'Sung']
+```
+
+질문 3   
+다음 코드를 실행했을 때 출력되는 내용을 고르세요.   
+```JavaScript
+let x = {
+  numbers: [1, 2, 3, 4],
+  title: 'Codeit',
+};
+let y = x.numbers;
+let z = x.title;
+ 
+x.numbers.unshift(5);
+x.title = 'Hello';
+
+console.log(y);
+console.log(z);
+```
+정답:   
+```JavaScript
+[5, 1, 2, 3, 4]
+Codeit
+```
 
 ### 12. 참조형 복사하기
 
