@@ -40,7 +40,10 @@ let teams = [
 ];
 
 // 여기에 코드를 작성해 주세요.
-
+for (let player of groups) {
+  teams[0].push(player[0])
+  teams[1].push(player[1])
+}
 
 // 테스트 코드
 console.log(teams[0]);
