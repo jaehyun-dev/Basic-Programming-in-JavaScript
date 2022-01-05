@@ -45,6 +45,9 @@ let teams = [
 //   teams[1].push(player[1])
 // }
 
+// 위와 같은 방식은 하드코딩. 다양한 상황에서도 답을 낼 수 있는 코드가 좋은 코드
+// 아직 이해 잘 안 됨, 코드잇에 질문 남겨놓음(2022.01.05).
+
 // 모범답안
 for(let i = 0; i < groups.length; i++) {
   for(let j = 0; j < groups[i].length; j++) {
