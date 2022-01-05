@@ -18,7 +18,9 @@ let lyrics = "[재석]너에게 나 하고 싶었던 말 고마워 미안해 함
 let hyungdon = null;
 
 // 코드를 작성해 주세요.
-
+hyungdonStartPart = lyrics.indexOf('[형돈]')
+gilStartPart = lyrics.indexOf('[길]')
+hyungdon = lyrics.slice(hyungdonStartPart, gilStartPart)
 
 // 테스트 코드
 console.log(hyungdon);
