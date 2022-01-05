@@ -175,7 +175,7 @@ main11.js 참고
 ### 12. 다차원 배열
 배열이 배열의 요소가 될 수 있음.   
 배열 안에 배열이 들어간 형태를 "다차원 배열"이라고 부름.   
-다차원 배열에 접근하는 방법
+다차원 배열에 접근하는 방법:
 ```JavaScript
 let twoDimensional = [[1, 2], [3, 4]];
 console.log(twoDimensional[0][1])
@@ -183,6 +183,7 @@ console.log(twoDimensional[0][1])
 ```JavaScript
 2
 ```
+속성보다 순서나 위치가 중요할 때 다차원 배열 쓰면 효율적.
 
 ### 13. 팀 나누기
-
+main13.js 참고
