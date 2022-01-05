@@ -205,10 +205,81 @@ console.log(sum)
 main06.js 참고
 
 ### 07. 문자열 심화
+문자열도 객체처럼 다룰 수 있음.   
+문자열은 배열과 비슷한 부분이 많음.   
+```JavaScript
+// String
+let myString = 'Hi Codeit';
+```
+```JavaScript
+// 문자열 길이
+console.log(myString.length); // 공백을 포함해 문자열의 글자 갯수 반환함.
 
+// 요소 접근
+console.log(myString[3]);
+console.log(myString.charAt(3));
+
+// 요소 탐색
+console.log(myString.indexOf('i');
+console.log(myString.lastIndexOf('i');
+console.log(myString.indexOf('a');
+
+// 대소문자 변환
+console.log(myString.toUpperCase());
+console.log(myString.toLowerCase());
+
+// 양 끝 공백 제거
+console.log(myString.trim());
+
+// 부분 문자열 접근 slice(start, end)
+// start부터 end 직전까지 가져옴.
+// end 생략 시 start부터 끝까지 가져옴.
+// 전부 생략 시 전부 가져옴.
+console.log(myString.slice(0, 2));
+console.log(myString.slice(3));
+console.log(myString.slice());
+```
+```
+9
+C
+C
+1
+7
+-1  // 문자열에 없는 글자
+HI CODEIT
+hi codeit
+HI CODEIT  // 양끝에 공백이 있을 시 지워줌
+Hi
+Codeit
+Hi Codeit
+```
 
 ### 08. 문자열과 배열 사이
+비슷한 점   
+문자열도 for...of문 활용할 수 있음.
+```JavaScript
+let myString = 'Codeit';
 
+for (let str of myString) {
+  console.log(str);
+}
+```
+```
+C
+o
+d
+e
+i
+t
+```
+
+다른 점   
+같은 글자를 같은 인덱스에 갖고 있다고 하더라도 배열과 문자열은 서로 type 다르고 value도 다름.   
+
+mutable vs immutable   
+배열은 바뀔 수 있지만 문자열은 바뀔 수 없음.   
+문자열은 새로 지정해줘야 함.   
+따라서 splice 같은 메소드 사용할 수 없음.
 
 ### 09. 그래, 우리 함꼐
 
