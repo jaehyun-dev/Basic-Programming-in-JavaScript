@@ -285,7 +285,48 @@ mutable vs immutable
 main09.js 참고
 
 ### 10. 기본형과 참조형
+기본형(Primitive Type)   
+Number, String, Boolean, Null, Undefined   
+```JavaScript
+let x = 3;
+let y = x;
+console.log(x);
+console.log(y);
+y = 5;
+console.log(x);
+console.log(y);
+```
+```
+3
+3
+3
+5
+```
+해당 변수에 값을 넣어줌.   
+변수에 기본형 변수를 넣으면 변수에 들어있던 값을 복사해서 넣어줌.   
+둘은 서로 다른 상자.
 
+참조형(Reference Type)   
+Object   
+```JavaScript
+let x = {name: 'Codeit'};
+let y = x;
+console.log(x);
+console.log(y);
+y.birth = 2017;
+console.log(x);
+console.log(y);
+```
+```
+{name : "Codeit"}
+{name : "Codeit"}
+{name : "Codeit", birth: 2017} // y뿐 아니라 x도 변함
+{name : "Codeit", birth: 2017}
+```
+변수에 객체값을 할당한 경우 객체값으로 가는 주소가 변수에 저장됨.   
+변수 상자와 객체 사이에 길이 열리게 됨.   
+따라서 let x = y; 에서는 객체가 복사되는 게 아니라 x에서 객체로 가는 길이 y에도 복사가 되는 것.   
+x와 y가 같은 객체 주소를 갖게 되고, 하나를 수정하면 다른 하나도 마찬가지로 바뀐 것처럼 보임.
 
 ### 11. 기본형과 참조형 익히기
 
