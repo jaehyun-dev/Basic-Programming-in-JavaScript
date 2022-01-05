@@ -49,7 +49,19 @@ element 지운 자리에 추가하기 때문에 index 밀릴 수 있음.
 main06.js 참고
 
 ### 07. 배열 메소드 II
+```JavaScript
+// 배열의 첫 요소를 삭제: shift()
+array.shift();
 
+// 배열의 마지막 요소를 삭제: pop()
+array.pop();
+
+// 배열의 첫 요소로 값 추가: unshift()
+array.unshift('value');
+
+// 배열의 마지막 요소로 값 추가: push()
+array.push('value');
+```
 
 ### 08. 배열 메소드 익히기
 
