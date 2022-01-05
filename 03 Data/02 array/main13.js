@@ -40,9 +40,16 @@ let teams = [
 ];
 
 // 여기에 코드를 작성해 주세요.
-for (let player of groups) {
-  teams[0].push(player[0])
-  teams[1].push(player[1])
+// for (let player of groups) {
+//   teams[0].push(player[0])
+//   teams[1].push(player[1])
+// }
+
+// 모범답안
+for(let i = 0; i < groups.length; i++) {
+  for(let j = 0; j < groups[i].length; j++) {
+    teams[j][i] = groups[i][j];
+  }
 }
 
 // 테스트 코드
