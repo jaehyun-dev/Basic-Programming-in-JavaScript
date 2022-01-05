@@ -31,7 +31,10 @@ let voteCounter = {};
 // votes 배열을 이용해서 voteCounter 객체를 정리하기
 for (let name of votes) {
   // 코드를 작성하세요.
-
+  if (!(name in voteCounter)) {
+    voteCounter[name] = 1;
+  } else {voteCounter[name] += 1;
+    }
 }
 
 // 후보별 득표수 출력
