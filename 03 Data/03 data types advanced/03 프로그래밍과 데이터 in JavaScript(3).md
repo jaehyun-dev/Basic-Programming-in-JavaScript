@@ -424,9 +424,98 @@ Object.assign() 메소드 활용하여 객체도 복사할 수 있음.
 main13.js 참고
 
 ### 14. const, 변수와 상수 사이
-
+코드가 길어지면 코드의 일관성을 위해 변수를 const로 선언해 중간에 값이 변하는 것을 방지할 수 있음.   
+하지만 객체의 경우 주소를 복사하는 것이기 때문에 const로 선언해도 property 추가나 변경이 가능.
 
 ### 15. const와 참조형 익히기
+질문 1   
+다음 코드의 실행결과로 올바른 것을 고르세요.   
+```JavaScript
+let x = 1;
 
+x = 4;
+
+const y = x;
+
+y = 3;
+x = 2;
+
+console.log(x);
+```
+정답: 
+```
+Error가 발생한다.
+```
+
+질문 2   
+다음 코드의 실행결과로 올바른 것을 고르세요.   
+```JavaScript
+let team1 = ['Drum', 'Bass', 'Saxophone'];
+const team2 = team1;
+
+team1.splice(2, 1, 'Trumpet');
+team2.splice(2, 1, 'Piano');
+
+console.log(team1);
+console.log(team2);
+```
+정답:   
+```JavaScript
+[ 'Drum', 'Bass', 'Piano' ]
+[ 'Drum', 'Bass', 'Piano' ]
+```
 
 ### 16. 변수, 그땐 그랬지
+끌어올림 (Hoisting)   
+```JavaScript
+console.log(myVariable);
+let myVariable;
+```
+```
+Uncaught ReferenceError: Cannot access 'myVariable' before initialization
+```
+let과 const로 선언한 변수는 선언되기 이전에 사용될 수 없습니다.   
+하지만, var 변수는 함수 스코프를 기준으로 선언되기 이전에도 변수에 접근이 가능한데요.
+```JavaScript
+console.log(myVariable);
+var myVariable;
+```
+```
+undefined
+```
+변수의 선언이 끌려 올라가서 마치, 2번째 줄과 첫 번째 줄이 바뀐 것처럼 동작하는데요.
+```JavaScript
+var myVariable;
+console.log(myVariable);
+```
+이렇게 변수가 끌어올려 지는 현상을 '호이스팅(hoisting)'이라고 부른다는 점도 기억해 두시면 좋을 것 같아요 :)   
+다행히 호이스팅은 선언과 동시에 값을 할당하더라도, 선언문만 올려지기 때문에 값은 그대로 두 번째 줄에 남아있는데요.
+```JavaScript
+console.log(myVariable);
+var myVariable = 2;
+console.log(myVariable);
+```
+```
+undefined
+2
+```
+하지만 이런 식으로 동작하는 방식은 코드의 흐름을 방해하기에 충분해 보이죠?   
+한 가지 주의해야 될 부분은, 함수를 선언할 때도 이 호이스팅이 적용됩니다.
+```JavaScript
+sayHi();
+
+function sayHi() {
+  console.log('hi');
+}
+```
+이렇게 코드를 작성하더라도 실행해보면,
+```JavaScript
+hi
+```
+당연한 듯 함수가 잘 실행되는 모습을 확인할 수 있습니다.   
+
+이런 현상은 함수를 한 번 선언하고 나면 어디서든 유연하게 사용할 수 있다는 장점이 있지만, 코드의 흐름에는 부정적인 영향을 끼칠 수 있습니다.   
+그래서 함수를 선언할 떄는 가급적 코드 윗부분에 선언하거나, 호출을 항상 아래쪽에서 한다거나 나름대로 규칙을 세워서 코드를 작성하시기를 권장드립니다 :)   
+
+자, 지금까지 오래된 자바스크립트에서 변수를 만들 때 사용했던 var 키워드에 대해서 살펴봤는데요.   
+요즘은 잘 사용되지 않지만, 그래도 자바스크립트의 상식적인 측면에서 가볍게 이해하고 계시면 좋을 것 같습니다! :)
