@@ -384,7 +384,41 @@ Codeit
 ```
 
 ### 12. 참조형 복사하기
+22.01.06 목요일   
+```JavaScript
+let numbers1 = [1, 2, 3];
+let numbers2 = numbers.slice();
 
+numbers2.push(4)
+
+console.log(numbers1);
+console.log(numbers2);
+```
+```
+[1, 2, 3]
+[1, 2, 3, 4]
+```
+slice()를 활용하여 배열의 주소 대신 값을 직접 복사할 수 있음.
+
+```JavaScript
+let course1 = {
+  title: '파이썬 프로그래밍 기초',
+  language: 'Python'
+};
+
+let course2 = Object.assign({}, course1);
+
+course.title = '알고리즘의 정석';
+
+console.log(course1);
+console.log(course2);
+```
+```JavaScript
+{title: "파이썬 프로그래밍 기초", language: "Python"}
+{title: "알고리즘의 정석", language: "Python"}
+```
+Object.assign() 메소드 활용하여 객체도 복사할 수 있음.   
+주의: 객체나 배열 안에 중첩해서 객체나 배열이 있는 경우에는 주소가 복사되어 예상치 못한 결과 얻을 수 있음!
 
 ### 13. 레시피 만들기
 
