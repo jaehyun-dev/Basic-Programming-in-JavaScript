@@ -18,6 +18,7 @@ false
 true
 */
 
+/*
 function isPalindrome(word) {
   // 여기에 코드를 입력해 주세요.  
   if (word.length % 2 === 0) {
@@ -40,6 +41,20 @@ function isPalindrome(word) {
       }
     }
   }
+}
+*/
+
+//모범 답안
+function isPalindrome(word) {
+  //여기에 코드를 입력해 주세요.
+  for(let i = 0; i < Math.floor(word.length / 2); i++) {
+    let left = word[i];
+    let right = word[word.length - 1 - i];
+    if (left !== right) {
+      return false;
+    }
+  }
+  return true;
 }
 
 // 테스트 코드
