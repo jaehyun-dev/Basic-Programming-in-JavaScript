@@ -29,7 +29,15 @@
 
 function calculateChange(payment, cost) {
   // 코드를 작성해 주세요.
+  let fiftyThousandBill = Math.floor((payment - cost) / 50000);
+  let tenThousandBill = Math.floor((payment - cost) % 50000 / 10000);
+  let fiveThousandBill = Math.floor((payment - cost) % 10000 / 5000);
+  let oneThousandBill = Math.floor((payment - cost) % 5000 / 1000);
 
+  console.log(`50000원 지폐: ${fiftyThousandBill}장`);
+  console.log(`10000원 지폐: ${tenThousandBill}장`);
+  console.log(`5000원 지폐: ${fiveThousandBill}장`);
+  console.log(`1000원 지폐: ${oneThousandBill}장`);
 }
 
 // 테스트 코드
