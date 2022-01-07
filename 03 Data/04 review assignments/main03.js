@@ -19,8 +19,27 @@ true
 */
 
 function isPalindrome(word) {
-  // 여기에 코드를 입력해 주세요.
+  // 여기에 코드를 입력해 주세요.  
+  if (word.length % 2 === 0) {
+    number = word.length / 2;
+  } else {
+    number = (word.length - 1) / 2;
+  }
 
+  let halfWord = word.slice(0, number);
+  
+  i = 0;
+  while(i <= number) {
+    if(halfWord[i] !== word[word.length - 1 - i]) {
+      i++;
+      return false;
+    } else {
+      i++;
+      if(i >= number) {
+        return true;
+      }
+    }
+  }
 }
 
 // 테스트 코드
