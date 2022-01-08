@@ -202,7 +202,7 @@ console.log(sum)
 해결하기 위해서는 toFixed(1), Math.round(sum * 10) / 10 등의 방법으로 보정해줘야 함.
 
 ### 06. 이자 계산기
-main06.js 참고
+[main06.js](https://github.com/kjh105702/Basic-Programming-in-JavaScript/blob/722f13c46436a3075b07d210bc1fef1b2c06e6a7/03%20Data/03%20data%20types%20advanced/main06.js) 참고
 
 ### 07. 문자열 심화
 문자열도 객체처럼 다룰 수 있음.   
